@@ -22,11 +22,11 @@
 		if (hanr < 0.05) {
 			han = 13;
 		} else if (hanr < 0.1) {
-			han = Math.random() * 2 + 11;
+			han = Math.floor(Math.random() * 2) + 11;
 		} else if (hanr < 0.15) {
-			han = Math.random() * 3 + 8;
+			han = Math.floor(Math.random() * 3) + 8;
 		} else if (hanr < 0.3) {
-			han = Math.random() * 2 + 6;
+			han = Math.floor(Math.random() * 2) + 6;
 		} else if (hanr < 0.5) {
 			han = 5;
 		} else {
@@ -57,6 +57,9 @@
 			},
 			...records
 		];
+
+		if (userInput === score) corrects++;
+		total++;
 
 		[fu, han, oya, agari] = createSet();
 		userInput = '';
@@ -98,6 +101,9 @@
 			return `${score}`;
 		}
 	}
+
+	let total = 0;
+	let corrects = 0;
 </script>
 
 <div class="main-container">
@@ -115,6 +121,7 @@
 				</div>
 			{/each}
 		</div>
+		<div>정답률: {Math.round((corrects / total) * 10000) / 100}%</div>
 	</div>
 </div>
 

@@ -22,11 +22,11 @@
 		if (hanr < 0.05) {
 			han = 13;
 		} else if (hanr < 0.1) {
-			han = 11;
+			han = Math.random() * 2 + 11;
 		} else if (hanr < 0.15) {
-			han = 9;
+			han = Math.random() * 3 + 8;
 		} else if (hanr < 0.3) {
-			han = 6;
+			han = Math.random() * 2 + 6;
 		} else if (hanr < 0.5) {
 			han = 5;
 		} else {

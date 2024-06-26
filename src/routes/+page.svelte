@@ -102,7 +102,7 @@
 
 <div class="main-container">
 	<div class="container">
-		<div>{fu}부 {han}판 {oya} {agari}</div>
+		<div>{han}판 {fu}부 {oya} {agari}</div>
 		<form on:submit|preventDefault>
 			<input type="text" bind:value={userInput} placeholder="4000/6000" />
 			<button on:click={ok}>OK</button>
@@ -110,7 +110,7 @@
 		<div class="record">
 			{#each records as record}
 				<div class:correct={record.correct} class:incorrect={!record.correct}>
-					{record.fu}부 {record.han}판 {record.oya}
+					{record.han}판 {record.fu}부 {record.oya}
 					{record.agari}: {record.score}
 				</div>
 			{/each}

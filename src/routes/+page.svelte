@@ -121,7 +121,7 @@
 				</div>
 			{/each}
 		</div>
-		<div>정답률: {Math.round((corrects / total) * 10000) / 100}%</div>
+		<div>정답률: {Math.round((corrects / total) * 10000) / 100}% ({corrects}/{total})</div>
 	</div>
 </div>
 

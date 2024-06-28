@@ -1,6 +1,6 @@
 <script lang="ts">
-	const OYA = '오야';
-	const KO = '코';
+	const OYA = '친';
+	const KO = '자';
 	const TSUMO = '쯔모';
 	const RON = '론';
 

@@ -173,6 +173,7 @@
 		border: 1px solid #ccc;
 		border-radius: 8px;
 		overflow-y: auto;
+		background-color: white;
 	}
 
 	.correct {

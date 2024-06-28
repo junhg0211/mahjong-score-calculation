@@ -122,6 +122,10 @@
 			{/each}
 		</div>
 		<div>정답률: {Math.round((corrects / total) * 10000) / 100}% ({corrects}/{total})</div>
+		<div class="small">
+			론인 경우에는 <code>8000</code>, 친 쯔모인 경우에는 <code>4000 all</code>,<br />
+			자 쯔모인 경우에는 <code>2000/4000</code>과 같은 형식으로 입력합니다.
+		</div>
 	</div>
 </div>
 
@@ -177,5 +181,13 @@
 
 	.incorrect {
 		color: red;
+	}
+
+	.small {
+		font-size: 0.6rem;
+	}
+
+	code {
+		color: #a00;
 	}
 </style>
